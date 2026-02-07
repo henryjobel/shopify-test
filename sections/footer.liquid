@@ -1,0 +1,54 @@
+<footer class="site-footer">
+  <div class="page-width site-footer__grid">
+    <div>
+      <h3>{{ shop.name }}</h3>
+      <p>{{ section.settings.description }}</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <ul>
+        {% for link in section.settings.footer_menu.links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>{{ section.settings.email }}</li>
+        <li>{{ section.settings.phone }}</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "A conversion-focused Shopify storefront built from your design brief."
+    },
+    {
+      "type": "link_list",
+      "id": "footer_menu",
+      "label": "Footer menu"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email",
+      "default": "hello@example.com"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "Phone",
+      "default": "+1 (000) 000-0000"
+    }
+  ]
+}
+{% endschema %}

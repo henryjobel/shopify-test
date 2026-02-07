@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Theme settings",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Use the section settings in Online Store > Themes > Customize to match your Figma exactly."
+      }
+    ]
+  }
+]
