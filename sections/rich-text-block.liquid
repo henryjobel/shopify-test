@@ -1,0 +1,22 @@
+<section class="section-spacing page-width">
+  <div class="rich-text">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.text }}</p>
+    {% if section.settings.button_label != blank %}
+      <a class="button button--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Rich text block",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Build trust with a strong final call-to-action" },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Use this section for newsletter signup, founder note, or campaign CTA." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Shop now" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "presets": [{ "name": "Rich text block" }]
+}
+{% endschema %}

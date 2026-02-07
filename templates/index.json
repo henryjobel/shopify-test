@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {
+        "eyebrow": "Spring / Summer 2026",
+        "heading": "Elevate your everyday with timeless essentials",
+        "subtext": "Designed for modern homes and mindful routines — premium materials, clean forms, and comfort-first details.",
+        "button_label": "Shop now",
+        "secondary_button_label": "Explore collection"
+      }
+    },
+    "featured": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Featured products",
+        "subtext": "Best-selling pieces curated for your homepage.",
+        "products_to_show": 8,
+        "button_label": "View all products"
+      }
+    },
+    "split": {
+      "type": "split-feature",
+      "settings": {
+        "heading": "Crafted details. Everyday utility.",
+        "text": "Tell your brand story with a visual section that balances editorial feel with conversion-focused CTA.",
+        "button_label": "Read our story"
+      }
+    },
+    "props": {
+      "type": "value-props",
+      "blocks": {
+        "item_1": { "type": "item", "settings": { "title": "Premium materials", "text": "Durable, responsibly sourced, and made to last." } },
+        "item_2": { "type": "item", "settings": { "title": "Fast delivery", "text": "Dispatch in 24 hours from regional warehouses." } },
+        "item_3": { "type": "item", "settings": { "title": "Easy returns", "text": "30-day returns and hassle-free support." } }
+      },
+      "block_order": ["item_1", "item_2", "item_3"],
+      "settings": { "heading": "Why customers choose us" }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "q1": { "type": "quote", "settings": { "quote": "Beautiful quality and exactly what I expected from the photos.", "author": "Mia R." } },
+        "q2": { "type": "quote", "settings": { "quote": "Packaging, delivery speed, and product quality were all excellent.", "author": "Jordan K." } },
+        "q3": { "type": "quote", "settings": { "quote": "The design is minimal and premium — fits perfectly in our home.", "author": "Elena T." } }
+      },
+      "block_order": ["q1", "q2", "q3"],
+      "settings": { "heading": "Loved by thousands", "subtext": "Real customer reviews" }
+    },
+    "rich_text": {
+      "type": "rich-text-block",
+      "settings": {
+        "heading": "Ready to launch your Shopify store?",
+        "text": "This theme is fully modular so you can fine-tune content, spacing, and imagery to match your Figma file exactly inside Theme Editor.",
+        "button_label": "Start customizing"
+      }
+    }
+  },
+  "order": ["hero", "featured", "split", "props", "testimonials", "rich_text"]
+}
